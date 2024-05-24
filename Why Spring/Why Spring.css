@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.head-1 {
+    background-color: #FECC53;
+    color: #2A3D53;
+}
+
+.head-2 p {
+    font-size: 35px;
+    color: #0077B6;
+}
+
+.head-3 h6 {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #2A3D53;
+}
+
+.head-3 p {
+    font-size: 15px;
+    color: #2A3D53;
+}
+
+.nav-link {
+    color: #2A3D53;
+    font-weight: 500;
+}
+
+.nav-item a {
+    color: black;
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    border-bottom: 3px solid #00B4D8;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.nav-item a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-item a:hover {
+    color: #00B4D8;
+    transition-duration: 0.3s;
+}
+
+.nav-btn {
+    border: 2px solid #005C8D;
+    color: #005C8D;
+    font-weight: 600;
+}
+.head-btn {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(0, 92, 141), rgb(0, 119, 182));
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.head-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: left 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: 1;
+}
+
+.head-btn:hover::before {
+    left: 0;
+}
+
+.head-btn i {
+    margin-left: 10px;
+    transition: transform 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.head-btn:hover i {
+    transform: translateX(5px);
+}
+
+.head-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.sec-1 {
+    background-image: url('./Why Spring IMG/blog-1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sec-1 h1 {
+    font-size: 50px;
+}
+.sec-2 {
+    background-image: url('./Why Spring IMG/why spring vector.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: scroll;
+    padding-top: 100px;
+}
+
+.sec2-1 h1 , .sec2-2 h1 {
+    color: #2A3D53;
+}
+.sec2-2 {
+    background-color: #FECC53;
+    border-top-right-radius: 170px;
+    border-bottom-right-radius: 170px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sec2-3 {
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color: white;
+}
+
+
+.sec-3 {
+    background-image: url('./Why Spring IMG/vector-2.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: scroll;
+    padding-top: 100px;
+}
+
+.sec3-1 h1 , .sec3-2 h1 {
+    color: #2A3D53;
+}
+.sec3-2 {
+    background-color: #FECC53;
+    border-top-left-radius: 170px;
+    border-bottom-left-radius: 170px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sec3-3 {
+    padding-top:70px;
+    padding-bottom:50px;
+    background-color: white;
+}
+.sec-4 {
+    background-color: #00B4D8;
+    color: white;
+    margin-top: 100px;
+}
+.sec-5 {
+    margin-top: -170px;
+}
+.sec5-1 {
+    box-shadow: 0 0 15px rgb(188, 188, 188);
+    cursor: pointer;
+    width: 250px;
+    background-color: white;
+    transition-duration: 0.3s;
+}
+.sec5-1:hover {
+    background-color: #FECC53;
+}
+.sec-6 {
+    margin-top: 100px;
+}
+.sec-6 h1 {
+    color: #0077B6;
+}
+.sec-7 {
+    margin-top: 100px;
+}
+.sec7-1 {
+    background-color: rgb(238, 238, 238);
+    width: max-content;
+    padding: 10px 100px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.sec7-2 {
+    background-color: rgb(238, 238, 238);
+    width: max-content;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.sec7-3 {
+    background-color: rgb(238, 238, 238);
+    width: max-content;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.sec7-1:hover, .sec7-2:hover, .sec7-3:hover {
+    transform: scale(110%);
+    background-color: #e3e3e3;
+    box-shadow: 0 0 20px #aaaaaa;
+}
+.sec8-1 {
+    margin-top: 150px;
+    background-color: #FECC53;
+}
+
+.sec8-1 h1 {
+    color: #2A3D53;
+}
+
+.sec8-1 p {
+    color: #005C8D;
+}
+
+footer {
+    color: #fff;
+    background-image: url('../IMG/footer1.jpg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: scroll;
+    margin-top: 50px;
+}
+
+.social-icons i {
+    margin-right: 5px;
+    font-size: 24px;
+    padding: 5px 11px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: #ffffff;
+}
+
+.foot-1 i {
+    font-size: 18px;
+}
+
+.social-icons i:hover {
+    color: #FECC53;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1400px) {
+    .sec2-3 {
+        padding:50px;
+    }
+    .sec3-3 {
+        padding:80px;
+    }
+    .sec5-1 {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .head-1 {
+        font-size: 1vw;
+    }
+    .head-2 p {
+        font-size: 2.2vw;
+        color: #0077B6;
+    }
+    .head-3 h6 {
+        font-size: 1.4vw;
+        margin-bottom: 0;
+        color: #2A3D53;
+    }
+    .head-3 p {
+        font-size: 1.1vw;
+        color: #2A3D53;
+    }
+    .nav-btn {
+        font-size: 1.1vw;
+        margin-left: 60px;
+    }
+    .navbar-nav {
+        font-size: 1.1vw;
+    }
+}
+@media screen and (max-width:1106px) {
+    .nav-btn {
+        font-size: 1.2vw;
+        margin-left: 60px;
+    }
+    .sec5-1 {
+        width: 190px;
+        height: auto;
+    }
+}
+@media screen and (max-width:1024px) {
+    .sec5-1 {
+        width: 180px;
+        height: auto;
+    }
+}
+@media screen and (max-width:992px) {
+    .head-btn {
+        font-size: 15px;
+    }
+    .navbar-nav {
+        font-size: 14px;
+    }
+    .nav-btn {
+        font-size: 14px;
+        margin-left: 0;
+    }
+    .sec2-2 {
+        background-color: #FECC53;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .sec2-3 {
+        background-color: #FECC53;
+    }
+    .sec3-2 {
+        background-color: #FECC53;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .sec3-3 {
+        background-color: #FECC53;
+    }
+    .sec5-1 {
+        width: 200px;
+        height: 230px;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .nav-error , .nav-number {
+        display: none;
+    }
+    .head-btn {
+        font-size: 15px;
+    }
+    .sec-1 h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:575px) {
+    .head-btn {
+        font-size: 10px;
+    }
+    .sec2-img1 img{
+        width: 100%;
+    }
+    .sec3-img1 img{
+        width: 100%;
+    }
+    .sec3-3 {
+        padding: 50px 0px 0px 0px;
+    }
+
+}
+@media screen and (max-width:296px){
+    .navbar-toggler {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
